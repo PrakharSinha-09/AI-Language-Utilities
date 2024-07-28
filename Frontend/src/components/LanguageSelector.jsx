@@ -3,7 +3,7 @@ const LanguageSelector = ({ label, selectedLanguage, onChange }) => {
     { code: 'en', name: 'English' },
     { code: 'es', name: 'Spanish' },
     { code: 'fr', name: 'French' },
-    { code: 'hn', name: 'Hindi' },
+    { code: 'hi', name: 'Hindi' },
     { code: 'ko', name: 'Korean' },
     { code: 'ru', name: 'Russian' },
     { code: 'ar', name: 'Arabic' },
