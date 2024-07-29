@@ -30,7 +30,7 @@ const App = () => {
 const handleTranslate = async () => {
   setLoading1(true);
   try {
-    const response = await axios.post('https://ai-language-utilities.onrender.com/translate', {
+    const response = await axios.post('https://ai-language-utilities.el.r.appspot.com/translate', {
       text,
       sourceLanguage,
       targetLanguage,
@@ -49,12 +49,12 @@ const handleTranslate = async () => {
 const handleSummarize = async () => {
   setLoading2(true)
   try {
-    const response = await axios.post('https://ai-language-utilities.onrender.com/summarize', {
+    const response = await axios.post('https://ai-language-utilities.el.r.appspot.com/summarize', {
       text,
     });
     setSummary(response.data.ans);
   } catch (error) {
-    console.error('Translation failed:', error);
+    console.error('Summarization failed:', error);
     setSummary('please try again!');
   }
   finally{

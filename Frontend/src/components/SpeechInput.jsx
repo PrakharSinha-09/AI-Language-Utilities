@@ -1,4 +1,3 @@
-// src/components/SpeechInput.js
 import { useState, useEffect } from 'react';
 
 const SpeechInput = ({ setText }) => {

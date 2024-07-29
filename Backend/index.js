@@ -3,7 +3,7 @@ const app = express();
 const cors=require('cors')
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 require('dotenv').config()
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(cors())
@@ -11,6 +11,12 @@ const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
+
+app.get('/',(req,res)=>{
+  res.json({
+    "msg":"Server Running Well!"
+  })
+})
 
 app.post('/translate', async (req, res) => {
     const { text, sourceLanguage, targetLanguage } = req.body;
