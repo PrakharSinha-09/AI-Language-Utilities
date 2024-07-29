@@ -10,7 +10,7 @@ Welcome to the AI Language Utilities App, a powerful tool designed to break lang
 - **Text Summarization**: Generate concise summaries of long texts.
 - **Speech-to-Text**: Convert spoken words into text using the `webkitSpeechRecognition` API.
 - **User-Friendly Interface**: Built with React and Tailwind CSS for a responsive and intuitive user experience.
-- **Deployment**: Frontend hosted on Vercel and backend on Render, ensuring smooth and scalable deployment.
+- **Deployment**: Frontend hosted on Vercel and backend on Google Cloud, ensuring smooth and scalable deployment.
 
 ## Technologies Used
 
